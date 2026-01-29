@@ -2,8 +2,11 @@ package hello.core.member;
 
 public class MemberServiceImpl implements MemberService {
 
-	//구현체가 없이 만들면 NPE로 터지기 때문에 new를 통해 구현체 생성
-	private final MemberRepository memberRepository = new MemoryMemberRepository();
+	private final MemberRepository memberRepository;
+
+	public MemberServiceImpl(MemberRepository memberRepository) {
+		this.memberRepository = memberRepository;
+	}
 
 	//회원가입
 	@Override
