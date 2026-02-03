@@ -3,13 +3,13 @@ package hello.core.order;
 public class Order {
 
 	private Long memberId;
-	private String itemname;
+	private String itemName;
 	private int itemPrice;
 	private int discountPrice;
 
-	public Order(Long memberId, String itemname, int itemPrice, int discoutPrice) {
+	public Order(Long memberId, String itemName, int itemPrice, int discountPrice) {
 		this.memberId = memberId;
-		this.itemname = itemname;
+		this.itemName = itemName;
 		this.itemPrice = itemPrice;
 		this.discountPrice = discountPrice;
 	}
@@ -26,12 +26,12 @@ public class Order {
 		this.memberId = memberId;
 	}
 
-	public String getItemname() {
-		return itemname;
+	public String getItemName() {
+		return itemName;
 	}
 
-	public void setItemname(String itemname) {
-		this.itemname = itemname;
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
 	public int getItemPrice() {
@@ -42,11 +42,11 @@ public class Order {
 		this.itemPrice = itemPrice;
 	}
 
-	public int getDiscoutPrice() {
+	public int getDiscountPrice() {
 		return discountPrice;
 	}
 
-	public void setDiscoutPrice(int discoutPrice) {
+	public void setDiscountPrice(int discoutPrice) {
 		this.discountPrice = discoutPrice;
 	}
 
@@ -54,7 +54,7 @@ public class Order {
 	public String toString() {
 		return "Order{" +
 			"memberId=" + memberId +
-			", itemname='" + itemname + '\'' +
+			", itemName='" + itemName + '\'' +
 			", itemPrice=" + itemPrice +
 			", discountPrice=" + discountPrice +
 			'}';
