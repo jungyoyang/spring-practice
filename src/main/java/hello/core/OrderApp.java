@@ -13,10 +13,12 @@ import hello.core.order.OrderServiceImpl;
 
 public class OrderApp {
 	public static void main(String[] args) {
+
 		// AppConfig appConfig = new AppConfig();
 		// MemberService memberService = appConfig.memberService();
 		// OrderService orderService = appConfig.orderService();
 
+		//스프링 컨테이너 생성
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 		OrderService orderService = applicationContext.getBean("orderService", OrderService.class);
